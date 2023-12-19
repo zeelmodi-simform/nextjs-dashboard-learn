@@ -8,15 +8,15 @@ import Table from '@/app/ui/invoices/table';
 import { lusitana } from '@/app/ui/fonts';
 import Pagination from '@/app/ui/invoices/pagination';
 import { fetchInvoicesPages } from '@/app/lib/data';
+import { Metadata } from 'next';
+import { PageProps } from '@/app/lib/definitions';
 
-export default async function Page({
-  searchParams,
-}: {
-  searchParams: {
-    query?: string;
-    page?: string;
-  };
-}) {
+export const metadata: Metadata = {
+  // title: 'Invoices | Acme Dashboard',
+  title: 'Invoices', // NOTE: removed after | as added template in layout.tsx
+};
+
+export default async function Page({ searchParams }: Readonly<PageProps>) {
   const query = searchParams?.query ?? '';
   const currentPage = Number(searchParams?.page ?? 1);
 

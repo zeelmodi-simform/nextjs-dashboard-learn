@@ -112,6 +112,17 @@ export default async function CustomersTable({
                       </td>
                     </tr>
                   ))}
+
+                  {!customers.length && (
+                    <tr className="group">
+                      <td
+                        className="whitespace-nowrap bg-white px-4 py-5 text-center text-sm"
+                        colSpan={5}
+                      >
+                        No records found
+                      </td>
+                    </tr>
+                  )}
                 </tbody>
               </table>
             </div>

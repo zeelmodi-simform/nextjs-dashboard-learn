@@ -1,5 +1,18 @@
-## Next.js App Router Course - Starter
+# Next.js Learn Dashboard
 
-This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
+A financial dashboard that has:
 
-For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+- a public homepage
+- a login page
+- Pages that are authenticated by authentication
+- The ability to add, edit, delete invoices.
+
+## Demo
+
+https://www.loom.com/share/a6a8b20bf93f44efb8105af1cb0ce665
+
+## Tech Stack
+
+**Frontend:** React, TailwindCSS, Next.js, Typescript
+
+**Backend:** Next.js (also used for server-side rendering and API routes), NextAuth, @vercel/postgres (PostgreSQL database for data storage), zod (for data validation)

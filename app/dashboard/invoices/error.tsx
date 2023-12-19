@@ -1,14 +1,9 @@
 'use client';
 
+import { ErrorPageProps } from '@/app/lib/definitions';
 import React, { useEffect } from 'react';
 
-export default function Error({
-  error,
-  reset,
-}: {
-  error: Error & { digest?: string };
-  reset: () => void;
-}) {
+export default function Error({ error, reset }: Readonly<ErrorPageProps>) {
   useEffect(() => {
     console.log(error);
   }, [error]);
